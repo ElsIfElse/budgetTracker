@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Input</title>
+    <link rel="stylesheet" href="inputStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="back">
+        <div class="container">
+            <h1 class="hero">Add new spending</h1>
+            <hr>
+            <div class="properties">
+                <h2>Title</h2>
+                <h2>Category</h2>
+                <h2>Time</h2>
+                <h2>Amount</h2>
+                <h2>Frequency</h2>
+                <h2>Descripton</h2>
+            </div>
+        <div class="input-datas" id="input-div">
+            <div class="title-box">
+                <input type="text" class="input-field title-input" placeholder="Title" id="title-input">
+            </div>
+            <div class="category-box">
+                <select name="" id="" class="category-input dropdown">
+                    <option value="">Groceries</option>
+                    <option value="">Entertainment</option>
+                    <option value="">Snacks</option>
+                    <option value="">Clothing</option>
+                </select>
+            </div>
+            <div class="time-box">
+                <select name="" id="" class="year-input">
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                    <option value="">2026</option>
+                </select>
+                <select name="" id="" class="month-input">
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">August</option>
+                    <option value="">September</option>
+                    <option value="">October</option>
+                    <option value="">November</option>
+                    <option value="">December</option>
+                </select>
+            </div>
+            <div class="amount-box">      
+                <input type="text" placeholder="Amount in Ft" class="input-field amount-input"> 
+            </div>
+            <div class="frequency">  
+                <select name=""id="" class="frequency-input dropdown">
+                    <option value="">One Time</option>
+                    <option value="">Weeekly</option>
+                    <option value="">Monthly</option>
+                    <option value="">Annual</option>
+                </select>
+            </div>
+            <div class="description-box description-input">
+                <input type="text" placeholder="Elaborate if needed" class="input-field">
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn ">Add New Expense</button>
+            <button class="btn ">Add To List</button>
+        </div>
+    </div>
+    </div>
+    
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
