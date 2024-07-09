@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded',async()=>{
         })
         if(response.ok){
             const data = await response.json()
-            const expenses = data.expense
-            sumLogic(expenses)
+            const expenses = data.expense       
             for(let i=0;i<expenses.length;i++){
                 createExpenseBox(expenses[i].title,expenses[i].category,expenses[i].time,expenses[i].amount+' Ft',expenses[i].frequency,expenses[i].description,expenses[i]._id)
             }
+            sumLogic(expenses)
         }
     } catch (error) {
         console.log('Something went wrong: ', error)
@@ -127,13 +127,13 @@ searchBtn.addEventListener('click',async()=>{
     
             })
             if(response.ok){
-
+                
                const expenses = await response.json();
-            //    const expenses = data.expense;            
-               console.log('expenses: ',expenses)
+               sumLogic(expenses)
                 for(let i=0;i<expenses.length;i++){
-                    createExpenseBox(expenses[i].title,expenses[i].category,expenses[i].time,expenses[i].amount+' Ft',expenses[i].frequency,expenses[i].description)
+                    createExpenseBox(expenses[i].title,expenses[i].category,expenses[i].time,expenses[i].amount+' Ft',expenses[i].frequency,expenses[i].description,expenses[i]._id)
                 }
+                
             }
     } catch (error) {
         console.log('Error:',error)
