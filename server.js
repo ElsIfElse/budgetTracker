@@ -1,33 +1,32 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-const { error } = require('console');
+const express = require('express');
+const app = express();
+const path = require('path')
+require('dotenv').config();
+const expenseRoute = require('./routes/expenses');
+const connectDb = require('./db/connect')
+app.use(express.static('./public'))
+app.use(express.json())
+app.use(express.urlencoded({extended:false}))
 
-const server = http.createServer(async (req,res)=>{
-    if(req.url === '/'){
-        await serveFile('./input.html','text/html',res)   
-    }
-    else if(req.url === '/inputStyle.css'){
-        await serveFile('./inputStyle.css','text/css',res);
-    }
-    else{
-        console.error('Page not found',req.url)
-        res.end('Page was not found');
-    }
+app.get('/input',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./input.html'))
+})
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'/display.html'))
 })
 
-async function serveFile(filePath,contentType,res){
-    try{
-        const data = await fs.promises.readFile(filePath,'utf-8');
-        res.setHeader('Content-Type',contentType)
-        res.end(data);
-    }
-    catch(error){
-        console.error('Error while reading file',error,filePath)
-        res.end('Internal Server Error')
-    }   
+app.use('/api/v1',expenseRoute)
+
+const main = async function(){
+    try {
+        await connectDb(process.env.dbURI)
+        console.log('Connected to database...')
+        app.listen(5000,()=>{
+            console.log('Server is listening on port 5000...')
+        })
+    } catch (error) {
+        console.log(error)
+    } 
 }
 
-server.listen(5000,()=>{
-    console.log('Server is listening on port 5000...')
-})
+main()

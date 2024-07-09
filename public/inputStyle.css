@@ -31,6 +31,7 @@ body{
     background-color: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
+
 }
 .container .hero{
     margin: 20px 0 20px 0;
@@ -78,7 +79,7 @@ body{
     margin: 0 0 0 25px;
 }
 .input-datas .frequency-input{
-    margin: 0 0 0 80px;
+    margin: 0 0 0 63px;
 }
 .input-datas .description-input{
     margin: 0 0 0 100px;
@@ -87,23 +88,96 @@ body{
     width: 100px;
     font-family: Karla;
     border-radius: 3px;
+    height: 30px;
+    font-size: 1rem;
+}
+.input-datas .time{
+    font-family: Karla;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 1rem;
 }
 .input-field{
     width: 120px;
     border-radius: 3px;
+    height: 25px;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid rgb(129, 129, 129);
     font-weight: 300;
     font-family: Karla;
+    font-size: 1rem;
+    transition: all 0.2s ease; 
+}
+.input-field:hover{
+    width: 120px;
+    border-radius: 3px;
+    height: 25px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 300;
+    font-family: Karla;
+    font-size: 1rem;
+    background-color: rgba(206, 206, 206, 0.1);
+}
+.input-field:focus{
+    width: 120px;
+    border-radius: 3px;
+    height: 25px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 300;
+    font-family: Karla;
+    font-size: 1rem;
+    background-color: rgba(206, 206, 206, 0.1);
 }
 .btn{
+    font-family: Karla;
+    border-radius: 3%;
+    border: 1px solid rgba(0,0,0,0.5);
+    outline: none;
+    font-family: Karla;
+    font-weight: 300;
+    height: 35px;
+    width: 150px;
+    transition: all 0.2s ease; 
+    font-size: 0.9rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+.btn:hover{
     font-family: Karla;
     border-radius: 3%;
     border: 1px solid black;
     outline: none;
     font-family: Karla;
     font-weight: 300;
+    height: 35px;
+    width: 150px;
+    box-shadow: 0 6px 2px rgba(0,0,0,0.2);
 }
 .buttons{
     margin: 300px 0 0 0;
+}
+
+.expense-display-btn{
+    width: 125px;
+    height: 40px;
+    margin: 50px 0 0 0;
+    font-family: Karla;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.2s ease; 
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+.expense-display-btn:hover{
+    width: 125px;
+    height: 40px;
+    margin: 50px 0 0 0;
+    font-family: Karla;
+    font-size: 0.9rem;
+    font-weight: 300;
+    box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+    border: 1px solid black;
 }

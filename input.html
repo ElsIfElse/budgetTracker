@@ -20,63 +20,64 @@
                 <h2>Time</h2>
                 <h2>Amount</h2>
                 <h2>Frequency</h2>
-                <h2>Descripton</h2>
+                <h2>Description</h2>
             </div>
         <div class="input-datas" id="input-div">
             <div class="title-box">
                 <input type="text" class="input-field title-input" placeholder="Title" id="title-input">
             </div>
             <div class="category-box">
-                <select name="" id="" class="category-input dropdown">
-                    <option value="">Groceries</option>
-                    <option value="">Entertainment</option>
-                    <option value="">Snacks</option>
-                    <option value="">Clothing</option>
+                <select name="" id="category-input" class="category-input dropdown">
+                    <option value="Groceries">Groceries</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Clothing">Clothing</option>
                 </select>
             </div>
             <div class="time-box">
-                <select name="" id="" class="year-input">
-                    <option value="">2024</option>
-                    <option value="">2025</option>
-                    <option value="">2026</option>
+                <select name="" id="year-input" class="year-input time">
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
                 </select>
-                <select name="" id="" class="month-input">
-                    <option value="">January</option>
-                    <option value="">February</option>
-                    <option value="">March</option>
-                    <option value="">April</option>
-                    <option value="">May</option>
-                    <option value="">June</option>
-                    <option value="">July</option>
-                    <option value="">August</option>
-                    <option value="">September</option>
-                    <option value="">October</option>
-                    <option value="">November</option>
-                    <option value="">December</option>
+                <select name="" id="month-input" class="month-input time">
+                    <option class="dropdown-content" value="January">January</option>
+                    <option class="dropdown-content" value="February">February</option>
+                    <option class="dropdown-content" value="March">March</option>
+                    <option class="dropdown-content" value="April">April</option>
+                    <option class="dropdown-content" value="May">May</option>
+                    <option class="dropdown-content" value="June">June</option>
+                    <option class="dropdown-content" value="July">July</option>
+                    <option class="dropdown-content" value="August">August</option>
+                    <option class="dropdown-content" value="September">September</option>
+                    <option class="dropdown-content" value="October">October</option>
+                    <option class="dropdown-content" value="November">November</option>
+                    <option class="dropdown-content" value="December">December</option>
                 </select>
             </div>
             <div class="amount-box">      
-                <input type="text" placeholder="Amount in Ft" class="input-field amount-input"> 
+                <input type="text" placeholder="Amount in Ft" class="input-field amount-input" id="price-input"> 
             </div>
             <div class="frequency">  
-                <select name=""id="" class="frequency-input dropdown">
-                    <option value="">One Time</option>
-                    <option value="">Weeekly</option>
-                    <option value="">Monthly</option>
-                    <option value="">Annual</option>
+                <select name=""id="frequency-input" class="frequency-input dropdown">
+                    <option value="One Time">One Time</option>
+                    <option value="Weeekly">Weeekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Annual">Annual</option>
                 </select>
             </div>
             <div class="description-box description-input">
-                <input type="text" placeholder="Elaborate if needed" class="input-field">
+                <input type="text" placeholder="Elaborate if needed" class="input-field" id="description-input">
             </div>
         </div>
         <div class="buttons">
-            <button class="btn ">Add New Expense</button>
-            <button class="btn ">Add To List</button>
+            <!-- <button class="btn" id="add-btn">Add New Expense</button> -->
+            <button class="btn" id="submit-btn">Add To List</button>
         </div>
     </div>
+    <button class="expense-display-btn" id="expense-display-btn">View Expenses</button>
     </div>
     
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
 </body>
 </html>

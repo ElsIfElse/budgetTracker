@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="displayStyles.css">
+</head>
+
+<body>
+    <div class="back">
+    <div class="container" id="container">       
+        <h1 class="hero">Your Expenses</h1>      
+        <hr>
+        <div class="filter-box">
+            <h2>Search :</h2>
+            <input type="text" class="search-box" id="search-input">
+            <button id="search-btn" class="search-btn">Search</button>
+            <button id="show-all-btn" class="search-btn">Show All</button>
+        </div>
+        <div class="properties">
+            <h2>Title</h2>
+            <h2>Category</h2>
+            <h2>Time</h2>
+            <h2>Amount</h2>
+            <h2>Frequency</h2>
+            <h2>Description</h2>
+        </div>
+        <div class="expense-card-container" id="expense-card-container">
+
+        </div>
+        <div class="sum">
+            <h2 class="sum-header">Sum: </h2>
+            <h2 class="sum-amount" id="sum-amount"></h2>
+            <h2 class="sum-currency">Ft</h2>
+        </div>
+
+    </div>
+    <button id="input-page-btn" class="input-page-btn">Input Page</button>
+</div>
+    <script src="display.js"></script>
+</body>
+</html>
