@@ -129,9 +129,30 @@ body{
 .expense-box .paragraph{
     width: 120px;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 0 ;
     text-align: center;
 }
+.expense-box .expense-category{
+    position: relative;
+    left: 10px
+}
+.expense-box .expense-time{
+    position: relative;
+    left: 30px
+}
+.expense-box .expense-amount{
+    position: relative;
+    left: 40px
+}
+.expense-box .expense-frequency{
+    position: relative;
+    left: 50px
+}
+.expense-box .expense-description{
+    position: relative;
+    left: 70px
+}
+
 .expense-box .expense-delete-btn{
     font-family: Karla;
     font-size: 1rem;
@@ -139,6 +160,8 @@ body{
     transition: all 0.3s ease;
     border: 1px solid rgba(0,0,0,0.3);
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    position: relative;
+    left: 35px;
 }
 .expense-box .expense-delete-btn:hover{
     font-family: Karla;
@@ -149,6 +172,7 @@ body{
     box-shadow: 0 5px 2px rgba(0,0,0,0.3);
 }
 .sum{
+    margin: 15px 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;

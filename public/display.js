@@ -23,32 +23,32 @@ function createExpenseBox(title,category,time,amount,frequency,descripton,id){
     
     const expenseTitle = document.createElement('p');
     expenseTitle.textContent = title
-    expenseTitle.className = 'paragraph'
+    expenseTitle.className = 'paragraph expense-title'
     expenseBox.appendChild(expenseTitle);
 
     const expenseCategory = document.createElement('p');
     expenseCategory.textContent = category
-    expenseCategory.className = 'paragraph'
+    expenseCategory.className = 'paragraph expense-category'
     expenseBox.appendChild(expenseCategory);
 
     const expenseTime = document.createElement('p');
     expenseTime.textContent = time
-    expenseTime.className = 'paragraph'
+    expenseTime.className = 'paragraph expense-time'
     expenseBox.appendChild(expenseTime);
 
     const expenseAmount = document.createElement('p');
     expenseAmount.textContent = amount
-    expenseAmount.className = 'paragraph'
+    expenseAmount.className = 'paragraph expense-amount'
     expenseBox.appendChild(expenseAmount);
 
     const expenseFrequency = document.createElement('p');
     expenseFrequency.textContent = frequency
-    expenseFrequency.className = 'paragraph'
+    expenseFrequency.className = 'paragraph expense-frequency'
     expenseBox.appendChild(expenseFrequency);
 
     const expenseDescription = document.createElement('p');
     expenseDescription.textContent = descripton
-    expenseDescription.className = 'paragraph'
+    expenseDescription.className = 'paragraph expense-description'
     expenseBox.appendChild(expenseDescription);
 
     const expenseDeleteBtn = document.createElement('button')
@@ -63,7 +63,6 @@ function createExpenseBox(title,category,time,amount,frequency,descripton,id){
 
 // Delete expense logic
 async function deleteExpense(id, expenseBox){
-    console.log(id);
     try {
         const response = await fetch(`http://192.168.0.100:5000/api/v1/${id}`,{
             method: 'DELETE',
@@ -71,10 +70,8 @@ async function deleteExpense(id, expenseBox){
                 'Content-Type':'application/json'
             }
         })
-
         if(response.ok){
             expenseBox.remove();
-            
         }
 
     } catch (error) {
@@ -127,13 +124,15 @@ searchBtn.addEventListener('click',async()=>{
     
             })
             if(response.ok){
-                
-               const expenses = await response.json();
-               sumLogic(expenses)
+                              
+                const expenses = await response.json();
+
                 for(let i=0;i<expenses.length;i++){
                     createExpenseBox(expenses[i].title,expenses[i].category,expenses[i].time,expenses[i].amount+' Ft',expenses[i].frequency,expenses[i].description,expenses[i]._id)
+                    
                 }
-                
+
+                sumLogic(expenses)
             }
     } catch (error) {
         console.log('Error:',error)
@@ -166,14 +165,23 @@ showAllBtn.addEventListener('click',async()=>{
 
 //Showing SUM of expenses
  function sumLogic(expenses){
-    console.log(expenses)
 
-    const prices = expenses.map((obj)=>{
-        return obj.amount
-    })
-    console.log('prices: ',prices)
-     const sum = prices.reduce((acc,curr)=>{
-        return acc+curr
-    })
+
+    let sum = 0;
+    if(expenses.length ===0){
+        sum = 0;
+    }
+    else{
+        let prices = expenses.map((obj)=>{
+            return obj.amount
+        })
+          sum = prices.reduce((acc,curr)=>{
+            return acc+curr
+        })
+    }
+
+   
+
+
     sumDisplay.textContent = sum;
 }
