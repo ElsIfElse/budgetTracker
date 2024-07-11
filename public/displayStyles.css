@@ -154,22 +154,17 @@ body{
 }
 
 .expense-box .expense-delete-btn{
-    font-family: Karla;
-    font-size: 1rem;
-    font-weight: 300;
     transition: all 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.3);
-    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    border: 0px solid rgba(0,0,0,0.0);
     position: relative;
     left: 35px;
+    outline: none;
 }
 .expense-box .expense-delete-btn:hover{
-    font-family: Karla;
-    font-size: 1rem;
-    font-weight: 300;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.3);
-    box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 3px rgba(0,0,0,0.3);
+    position: relative;
+    left: 35px;
+    outline: none;
 }
 .sum{
     margin: 15px 0 0 0;
@@ -379,22 +374,20 @@ body{
     }
     
     .expense-box .expense-delete-btn{
-        font-family: Karla;
-        font-size: 0.7rem;
-        font-weight: 300;
+        font-size: 0.5rem;
         transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0);
         box-shadow: 0 0 2px rgba(0,0,0,0.2);
         position: relative;
         left: 35px;
+        outline: none;
     }
     .expense-box .expense-delete-btn:hover{
-        font-family: Karla;
         font-size: 0.7rem;
-        font-weight: 300;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
-        box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+        border: 0px solid rgba(0,0,0,0);
+        box-shadow: 0 5px 3px rgba(0,0,0,0.3);
+        outline: none;
+        position: relative;
     }
     .sum{
         margin: 15px 0 0 0;
@@ -603,22 +596,21 @@ body{
     }
     
     .expense-box .expense-delete-btn{
-        font-family: Karla;
         font-size: 0.5rem;
-        font-weight: 300;
         transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
-        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+        border: 1px solid rgba(0,0,0,0);
         position: relative;
         left: 38px;
+        outline: none;
     }
     .expense-box .expense-delete-btn:hover{
-        font-family: Karla;
         font-size: 0.5rem;
-        font-weight: 300;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
-        box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0);
+        box-shadow: 0 5px 3px rgba(0,0,0,0.3);
+        outline: none;
+        position: relative;
+        left: 38px;
+        
     }
     .sum{
         margin: 10px 0 0 0;
@@ -828,22 +820,21 @@ body{
     }
     
     .expense-box .expense-delete-btn{
-        font-family: Karla;
         font-size: 0.4rem;
-        font-weight: 300;
         transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0);
         box-shadow: 0 0 2px rgba(0,0,0,0.2);
         position: relative;
         left: 45px;
+        outline: none;
     }
     .expense-box .expense-delete-btn:hover{
-        font-family: Karla;
         font-size: 0.4rem;
-        font-weight: 300;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
-        box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0);
+        box-shadow: 0 5px 3px rgba(0,0,0,0.3);
+        outline: none;
+        position: relative;
+        left: 45px;
     }
     .sum{
         margin: 5px 0 0 0;
@@ -1053,23 +1044,22 @@ body{
     }
     
     .expense-box .expense-delete-btn{
-        font-family: Karla;
-        font-size: 0.3rem;
-        font-weight: 300;
+        font-size: 0.4rem;
         transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
-        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+        border: 1px solid rgba(0,0,0,0);
+        box-shadow: 0 0px 2px rgba(0,0,0,0.2);
         position: relative;
-        left: 11px;
-        /* width: 15px; */
+        left: 5px;
+        outline: none;
     }
     .expense-box .expense-delete-btn:hover{
-        font-family: Karla;
         font-size: 0.4rem;
-        font-weight: 300;
         transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0);
         box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+        position: relative;
+        outline: none;
+        left: 5px;
     }
     .sum{
         margin: 5px 0 0 0;
@@ -1079,22 +1069,22 @@ body{
         align-items: center;
     }
     .sum .sum-header{
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: Karla;
         font-weight: 300;
         margin: 5px 5px 0 0;
     }
     .sum .sum-amount{
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: Karla;
         font-weight: 500;
         margin: 6px 3px 0 0;
     }
     .sum .sum-currency{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         font-family: Karla;
         font-weight: 300;
-        margin: 12px 0 0 0;
+        margin: 8px 0 0 0;
     }
     
     .input-page-btn{

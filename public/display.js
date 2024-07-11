@@ -52,8 +52,8 @@ function createExpenseBox(title,category,time,amount,frequency,descripton,id){
     expenseBox.appendChild(expenseDescription);
 
     const expenseDeleteBtn = document.createElement('button')
-    expenseDeleteBtn.textContent = 'X'
-    expenseDeleteBtn.className = 'expense-delete-btn'
+    // expenseDeleteBtn.textContent = 'X'
+    expenseDeleteBtn.className = 'expense-delete-btn fa-solid fa-x'
     expenseDeleteBtn.addEventListener('click',()=>{
         deleteExpense(id,expenseBox)
     })

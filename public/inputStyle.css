@@ -181,3 +181,910 @@ body{
     box-shadow: 0 6px 2px rgba(0,0,0,0.2);
     border: 1px solid black;
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 1536px){
+    .back{
+        margin: 50px 0 0 0;
+        padding: 50px;
+        width: 1000px;
+        /* height: 800px; */
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-image: url('materials/leather01.jpg'); */
+        background-size: 200%;
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    
+    }
+    .container{
+        margin: 0 0 0px 0px;
+        /* height: 600px; */
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+        padding: 40px;
+    
+    }
+    .container .hero{
+        margin: 20px 0 20px 0;
+        font-family: Karla;
+        font-weight: 300;
+        letter-spacing: -1px;
+        font-size: 2rem;
+    }
+    .container hr{
+        width: 700px;
+        /* border: 1px solid black; */
+        outline: none;
+        background-color: black;
+        margin: 0 0 20px 0;
+    }
+    .container .properties{
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .properties h2{
+        font-family: Karla;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    .input-datas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+    }
+    .input-datas .title-input{
+        margin: 0;
+        font-size: 0.8rem;
+        position: relative;
+        left: -8px;
+    }
+    .input-datas .category-input{
+        font-size: 0.8rem;
+        margin: 0;
+        position: relative;
+        left: -17px;
+    }
+    .input-datas .year-input{
+        font-size: 0.8rem;
+        margin: 0;
+        position: relative;
+        left: 2px;
+    }
+    .input-datas .month-input{
+        font-size: 0.8rem;
+        margin: 0;
+        position: relative;
+        left: -73px;
+        bottom: -30px;
+        width: 90px;
+    }
+    .input-datas .amount-input{
+        margin: 0;
+        font-size: 0.8rem;
+        position: relative;
+        left: -82px;
+    }
+    .input-datas .frequency-input{
+        margin: 0;
+        font-size: 0.8rem;
+        position: relative;
+        left: -65px;
+    }
+    .input-datas .description-input{
+        margin: 0;
+        font-size: 0.8rem;
+        position: relative;
+        left: -30px;
+    }
+    .input-datas .dropdown{
+        width: 90px;
+        margin: 0;
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    .input-datas .time{
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    .input-field{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(129, 129, 129);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.8rem;
+        transition: all 0.2s ease; 
+    }
+    .input-field:hover{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.8rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .input-field:focus{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.8rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .btn{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid rgba(0,0,0,0.5);
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 35px;
+        width: 150px;
+        transition: all 0.2s ease; 
+        font-size: 0.9rem;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+    }
+    .btn:hover{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid black;
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 35px;
+        width: 150px;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+    }
+    .buttons{
+        margin: 300px 0 0 0;
+    }
+    
+    .expense-display-btn{
+        width: 125px;
+        height: 40px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.9rem;
+        font-weight: 300;
+        transition: all 0.2s ease; 
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+    }
+    .expense-display-btn:hover{
+        width: 125px;
+        height: 40px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.9rem;
+        font-weight: 300;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+        border: 1px solid black;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1300px){
+    .back{
+        margin: 50px 0 0 0;
+        padding: 50px;
+        width: 800px;
+        /* height: 800px; */
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-image: url('materials/leather01.jpg'); */
+        background-size: 200%;
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    
+    }
+    .container{
+        margin: 0 0 0px 0px;
+        /* height: 600px; */
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+        padding: 30px;
+    
+    }
+    .container .hero{
+        margin: 0 0 20px 0;
+        font-family: Karla;
+        font-weight: 300;
+        letter-spacing: -1px;
+        font-size: 1.9rem;
+    }
+    .container hr{
+        width: 470px;
+        /* border: 1px solid black; */
+        outline: none;
+        background-color: black;
+        margin: 0 0 20px 0;
+    }
+    .container .properties{
+        width: 680px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .properties h2{
+        font-family: Karla;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .input-datas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+    }
+    .input-datas .title-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left: 25px;
+    }
+    .input-datas .category-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: 8px;
+    }
+    .input-datas .year-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: 20px;
+    }
+    .input-datas .month-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: -52px;
+        bottom: -30px;
+        width: 90px;
+    }
+    .input-datas .amount-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left: -80px;
+    }
+    .input-datas .frequency-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left: -75px;
+    }
+    .input-datas .description-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left: -55px;
+    }
+    .input-datas .dropdown{
+        width: 80px;
+        margin: 0;
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.7rem;
+    }
+    .input-datas .time{
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.7rem;
+    }
+    .input-field{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(129, 129, 129);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        transition: all 0.2s ease; 
+    }
+    .input-field:hover{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .input-field:focus{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .btn{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid rgba(0,0,0,0.5);
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 35px;
+        width: 150px;
+        transition: all 0.2s ease; 
+        font-size: 0.9rem;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+    }
+    .btn:hover{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid black;
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 35px;
+        width: 150px;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+    }
+    .buttons{
+        margin: 300px 0 0 0;
+    }
+    
+    .expense-display-btn{
+        width: 125px;
+        height: 40px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.9rem;
+        font-weight: 300;
+        transition: all 0.2s ease; 
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+    }
+    .expense-display-btn:hover{
+        width: 125px;
+        height: 40px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.9rem;
+        font-weight: 300;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+        border: 1px solid black;
+    }
+}       
+    
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .back{
+        margin: 50px 0 0 0;
+        padding: 50px;
+        width: 600px;
+        /* height: 800px; */
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-image: url('materials/leather01.jpg'); */
+        /* background-size: 200%; */
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    }
+    .container{
+        margin: 0 0 0px 0px;
+        /* height: 600px; */
+        width: 585px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+        padding: 30px;
+    }
+    .container .hero{
+        margin: 0 0 20px 0;
+        font-family: Karla;
+        font-weight: 300;
+        letter-spacing: -1px;
+        font-size: 1.8rem;
+    }
+    .container hr{
+        width: 470px;
+        /* border: 1px solid black; */
+        outline: none;
+        background-color: black;
+        margin: 0 0 20px 0;
+    }
+    .container .properties{
+        width: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        position: relative;
+        left: -100px;
+        margin: 30px 0 0 0;
+    }
+    .properties h2{
+        font-family: Karla;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .input-datas{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 85px;
+        position: relative;
+        bottom: 250px;
+    }
+    .input-datas .title-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left: 0px;
+        margin: 21px 0 0 0;
+        bottom: 30px;
+    }
+    .input-datas .category-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: 0px;
+        margin: 21px 0 0 0;
+        bottom: 30px;
+    }
+    .input-datas .year-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: 0px;
+        margin: 21px 0 0 0;
+        bottom: 30px;
+    }
+    .input-datas .month-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left:  0px;
+        bottom: 0px;
+        width: 90px;
+        margin: 21px 0 0 0;
+        bottom: 76px;
+        left: 55px;
+    }
+    .input-datas .amount-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left:  0px;
+        margin: 21px 0 0 0;
+        bottom: 78px;
+    }
+    .input-datas .frequency-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left:  0px;
+        margin: 21px 0 0 0;
+        bottom: 78px;
+    }
+    .input-datas .description-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left:  0px;
+        margin: 21px 0 0 0;
+        bottom: 78px;
+    }
+    .input-datas .dropdown{
+        width: 80px;
+        margin: 0;
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.7rem;
+        margin: 21px 0 0 0;
+        /* bottom: 78px; */
+    }
+    .input-datas .time{
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.7rem;
+        margin: 21px 0 0 0;
+        /* bottom: 60px; */
+    }
+    .input-field{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(129, 129, 129);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        transition: all 0.2s ease; 
+    }
+    .input-field:hover{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .input-field:focus{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .btn{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid rgba(0,0,0,0.5);
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 30px;
+        width: 100px;
+        transition: all 0.2s ease; 
+        font-size: 0.7rem;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        position: relative;
+        bottom: 580px;
+    }
+    .btn:hover{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid black;
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 30px;
+        width: 100px;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+    }
+    .buttons{
+        margin: 300px 0 0 0;
+    }
+    
+    .expense-display-btn{
+        width: 120px;
+        height: 35px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.8rem;
+        font-weight: 300;
+        transition: all 0.2s ease; 
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        position: relative;
+        bottom: 175px;
+    }
+    .expense-display-btn:hover{
+        width: 120px;
+        height: 35px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.8rem;
+        font-weight: 300;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+        border: 1px solid black;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px){
+    .back{
+        margin: 50px 0 0 0;
+        padding: 50px;
+        width: 350px;
+        /* height: 800px; */
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-image: url('materials/leather01.jpg'); */
+        /* background-size: 200%; */
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    }
+    .container{
+        margin: 0 0 0px 0px;
+        /* height: 600px; */
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+        padding: 30px;
+    }
+    .container .hero{
+        margin: 0 0 20px 0;
+        font-family: Karla;
+        font-weight: 300;
+        letter-spacing: -1px;
+        font-size: 1.8rem;
+    }
+    .container hr{
+        width: 300px;
+        /* border: 1px solid black; */
+        outline: none;
+        background-color: black;
+        margin: 0 0 20px 0;
+    }
+    .container .properties{
+        width: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        position: relative;
+        left: -100px;
+        margin: 30px 0 0 0;
+    }
+    .properties h2{
+        font-family: Karla;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+    .input-datas{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 85px;
+        position: relative;
+        bottom: 250px;
+    }
+    .input-datas .title-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left: 0px;
+        margin: 21px 0 0 0;
+        bottom: 8px;
+    }
+    .input-datas .category-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: 0px;
+        margin: 21px 0 0 0;
+        bottom: 12px;
+    }
+    .input-datas .year-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left: 0px;
+        margin: 21px 0 0 0;
+        bottom: 17px;
+    }
+    .input-datas .month-input{
+        font-size: 0.7rem;
+        margin: 0;
+        position: relative;
+        left:  0px;
+        bottom: 0px;
+        width: 90px;
+        margin: 21px 0 0 0;
+        bottom: 63px;
+        left: 55px;
+    }
+    .input-datas .amount-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left:  0px;
+        margin: 21px 0 0 0;
+        bottom: 68px;
+    }
+    .input-datas .frequency-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left:  0px;
+        margin: 21px 0 0 0;
+        bottom: 71px;
+    }
+    .input-datas .description-input{
+        margin: 0;
+        font-size: 0.7rem;
+        position: relative;
+        left:  0px;
+        margin: 21px 0 0 0;
+        bottom: 76px;
+    }
+    .input-datas .dropdown{
+        width: 80px;
+        margin: 0;
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.7rem;
+        margin: 21px 0 0 0;
+        /* bottom: 78px; */
+    }
+    .input-datas .time{
+        font-family: Karla;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 0.7rem;
+        margin: 21px 0 0 0;
+        /* bottom: 60px; */
+    }
+    .input-field{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(129, 129, 129);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        transition: all 0.2s ease; 
+    }
+    .input-field:hover{
+        width: 100px;
+        border-radius: 3px;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .input-field:focus{
+        width: 100px;
+        border-radius: 3px;
+        height: 25px;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 300;
+        font-family: Karla;
+        font-size: 0.7rem;
+        background-color: rgba(206, 206, 206, 0.1);
+    }
+    .btn{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid rgba(0,0,0,0.5);
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 30px;
+        width: 100px;
+        transition: all 0.2s ease; 
+        font-size: 0.7rem;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        position: relative;
+        bottom: 580px;
+        letter-spacing: 1px;
+    }
+    .btn:hover{
+        font-family: Karla;
+        border-radius: 3%;
+        border: 1px solid black;
+        outline: none;
+        font-family: Karla;
+        font-weight: 300;
+        height: 30px;
+        width: 100px;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+        
+    }
+    .buttons{
+        margin: 300px 0 0 0;
+    }
+    
+    .expense-display-btn{
+        letter-spacing: 1px;
+        width: 120px;
+        height: 35px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.8rem;
+        font-weight: 300;
+        transition: all 0.2s ease; 
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        position: relative;
+        bottom: 220px;
+    }
+    .expense-display-btn:hover{
+        width: 120px;
+        height: 35px;
+        margin: 50px 0 0 0;
+        font-family: Karla;
+        font-size: 0.8rem;
+        font-weight: 300;
+        box-shadow: 0 6px 2px rgba(0,0,0,0.2);
+        border: 1px solid black;
+    }
+}
+    
